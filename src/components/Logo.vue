@@ -1,7 +1,7 @@
 <template>
 	<g-link class="logo" to="/">
 	  <span class="logo__text">
-	    &larr; {{ $static.metaData.siteName }}
+	    {{ $static.metaData.siteName }}
 	  </span>
 	</g-link>
 </template>
@@ -17,8 +17,9 @@ query {
 <style lang="scss">
 .logo {
 	text-decoration: none;
-  color: var(--body-color)!important;
-  font-size: .9em;
+  	color: var(--body-color)!important;
+	 font-size: 1.3em;
+	 font-weight: 800;
   
 	&__image {
 		vertical-align: middle;

@@ -3,11 +3,14 @@
 
     <header class="header">
       <div class="header__left">
-        <Logo v-if="showLogo" />
+        <Logo/>
       </div>
 
       <div class="header__right">
-        <ToggleTheme />
+        <div 
+        class="header__navbutton"
+        @click="navState = !navState">MENU</div>
+        
       </div>
     </header>
 
@@ -20,25 +23,36 @@
       <span class="footer__links">Powered by <a href="//www.suits.at"> SUITS </a></span>
     </footer>
 
+    <Navigation :navState="navState" />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
+import Navigation from '~/components/Navigation.vue'
 
 export default {
-  props: {
-    showLogo: { default: true }
+  data() {
+    return {
+      navState: false
+    }
   },
   components: {
     Logo,
-    ToggleTheme
+    ToggleTheme,
+    Navigation
   }
 }
 </script>
 
 <style lang="scss">
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,6 +66,12 @@ export default {
   &__right {
     display: flex;
     align-items: center;
+  }
+  &__navbutton {
+    font-weight: 800;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @media screen and (min-width: 1300px) {
@@ -73,6 +93,7 @@ export default {
   padding: calc(var(--space) / 2);
   text-align: center;
   font-size: .8em;
+  margin-top: auto;
 
   > span {
     margin: 0 .35em;
