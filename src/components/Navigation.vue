@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import ToggleTheme from '~/components/ToggleTheme.vue'
+import ToggleTheme from './components/ToggleTheme.vue'
 
 export default {
     props: ['navState'],
@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style lang="scss">
-    
 .nav {
   position: absolute;
   top: 0;
