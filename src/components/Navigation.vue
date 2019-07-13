@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import ToggleTheme from './components/ToggleTheme.vue'
+import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
     props: ['navState'],
