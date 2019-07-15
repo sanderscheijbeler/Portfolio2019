@@ -1,19 +1,15 @@
 <template>
   <Layout>
-      <h1>
-        Home
-      </h1>
-      <p>
-        Hier komt vanalles over mij!
-      </p>
+      <hero></hero>
   </Layout>
 </template>
 
 <script>
+import Hero from '~/components/Hero.vue'
 
 export default {
   components: {
-    
+    Hero
   },
   metaInfo: {
     title: 'Home'
