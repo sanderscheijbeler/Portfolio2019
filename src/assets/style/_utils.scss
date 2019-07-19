@@ -1,34 +1,32 @@
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 
 .space-bottom {
-	margin-bottom: var(--space);
+    margin-bottom: var(--space);
 }
 
 @keyframes blinkRedBlue {
-	0% {
-		background-color: #F00;
-	}
+    0% {
+        background-color: #F00;
+    }
 
-	25% {
-		background-color: #A00;
-		// box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
-	}
+    25% {
+        background-color: #A00;
+    }
 
-	50% {
-		background-color: #F00;
-	}
-	51% {
-		background-color: #0001A9;
-	}
+    50% {
+        background-color: #F00;
+    }
+    51% {
+        background-color: #0001A9;
+    }
 
-	75% {
-		background-color: #0001A9;
-		// box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
-	}
+    75% {
+        background-color: #0001A9;
+    }
 
-	100% {
-		background-color: #0001A9;
-	}
+    100% {
+        background-color: #0001A9;
+    }
 }

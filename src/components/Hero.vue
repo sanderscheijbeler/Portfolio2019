@@ -2,10 +2,10 @@
     <div class="grid-wrapper">
         <div class="grid-container">
             <div class="imageone">
-                <img src="..\..\static\images\uploads\police.jpg" alt="sander as a police officer">
+                <img src="images\uploads\police.jpg" alt="sander as a police officer">
             </div>
             <div class="imagetwo">
-                <img src="..\..\static\images\uploads\city.jpg" alt="sander in the city">
+                <img src="images\uploads\city.jpg" alt="sander in the city">
             </div>
             <div class="textone">
                 <span>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    
+
 }
 </script>
 
@@ -40,39 +40,42 @@ export default {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: ". imageone textthree ." "textone imageone imagetwo ." ". texttwo . .";
   grid-gap: 11px;
-  
+
   * {
-    //   border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 }
 
-.imageone { 
+span {
+    font-size: 2.7rem;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.imageone {
     grid-area: imageone;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.imagetwo { 
+.imagetwo {
     grid-area: imagetwo;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.textone { 
+.textone {
     grid-area: textone;
-    position: relative; 
-    
+    position: relative;
+
     span {
         display: block;
         transform: rotate(-90deg) translateX(50%);
         width: 100%;
         white-space: nowrap;
-        font-size: 2.7rem;
-        line-height: 1em;
-        font-weight: 700;
-        text-transform: uppercase;
         margin: 0;
         padding: 0;
 
@@ -83,30 +86,44 @@ export default {
     }
 }
 
-.texttwo { 
-    grid-area: texttwo; 
+.texttwo {
+    grid-area: texttwo;
 
     span {
         display: inline-block;
-        font-size: 2.7rem;
-        line-height: 1em;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-top: -10px;
     }
 
     .accent {
         position: relative;
-        animation: blinkRedBlue 0.5s infinite;
-        color: #fff; 
-        
+        color: var(--body-color);
+        z-index: 1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2%;
+            animation: blinkRedBlue 0.5s infinite;
+            animation-play-state: paused;
+            z-index: -1;
+            transition: all 110ms ease-in;
+        }
+
         &:hover {
-            animation-play-state: running;
+            color: #fff;
+
+            &:before {
+                height: 100%;
+                animation-play-state: running;
+            }
         }
     }
 }
 
-.textthree { 
+.textthree {
     grid-area: textthree;
     display: flex;
     flex-direction: column;
@@ -115,10 +132,6 @@ export default {
 
     span {
         display: inline-block;
-        font-size: 2.7rem;
-        line-height: 1em;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-bottom: -6px;
     }
 }

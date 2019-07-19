@@ -7,10 +7,10 @@
       </div>
 
       <div class="header__right">
-        <div 
+        <div
         class="header__navbutton"
         @click="navState = !navState">MENU</div>
-        
+
       </div>
     </header>
 
@@ -51,6 +51,7 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 
 .header {
