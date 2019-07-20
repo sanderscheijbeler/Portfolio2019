@@ -42,7 +42,7 @@ export default {
   grid-gap: 11px;
 
   * {
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 }
 
