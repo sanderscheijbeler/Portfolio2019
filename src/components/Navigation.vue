@@ -52,6 +52,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 
   // transform: translateY(-100%);
   opacity: 0;
@@ -59,6 +60,7 @@ export default {
 
   &--open {
     opacity: 1;
+    z-index: 1000;
     // transform: translateY(0%);
   }
 }

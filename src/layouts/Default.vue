@@ -61,7 +61,10 @@ export default {
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top:0;
-  z-index: 10;
+  left: 0;
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
 
   &__left,
   &__right {
@@ -74,16 +77,10 @@ export default {
       cursor: pointer;
     }
   }
-
-  @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
-  }
 }
 
 .main {
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   padding: 1.5vw 15px 0;
 }
 

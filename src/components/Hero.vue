@@ -42,15 +42,20 @@ export default {
   grid-gap: 11px;
 
   * {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
   }
 }
 
 span {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media screen and (min-width: 650px) {
+	    font-size: 2.7rem;
+        line-height: 1em;
+    }
 }
 
 .imageone {
