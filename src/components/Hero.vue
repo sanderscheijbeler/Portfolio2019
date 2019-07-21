@@ -1,25 +1,15 @@
 <template>
-    <div class="grid-wrapper">
-        <div class="grid-container">
-            <div class="imageone">
-                <img src="images\uploads\police.jpg" alt="sander as a police officer">
-            </div>
-            <div class="imagetwo">
-                <img src="images\uploads\city.jpg" alt="sander in the city">
-            </div>
-            <div class="textone">
-                <span>
-                    how a
-                </span>
-            </div>
-            <div class="texttwo">
-                <span class="accent">cop</span>&nbsp;<span>became a</span>
-            </div>
-            <div class="textthree">
-                <span>coder</span>
-            </div>
+<div class="hero__wrapper">
+    <div class="image">
+        <img src="images\uploads\sander.jpg" alt="sander as a police officer">
+        
+        <div class="content">
+            <h1>How a cop became a coder</h1>
+            <p>My name is Sander, and i create websites.. also i used to be a policeofficer. Weird right?!</p>
+            <p><a href="#readmore"><span>Read</span> more</a></p>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -29,115 +19,65 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.grid-wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". imageone textthree ." "textone imageone imagetwo ." ". texttwo . .";
-  grid-gap: 11px;
-
-  * {
-    //border: 1px solid red;
-  }
-}
-
-span {
-    font-size: 1.5rem;
-    line-height: 1em;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 650px) {
-	    font-size: 2.7rem;
-        line-height: 1em;
-    }
-}
-
-.imageone {
-    grid-area: imageone;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.imagetwo {
-    grid-area: imagetwo;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.textone {
-    grid-area: textone;
-    position: relative;
-
-    span {
-        display: block;
-        transform: rotate(-90deg) translateX(50%);
+.hero {
+    &__wrapper {
         width: 100%;
-        white-space: nowrap;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-        position: absolute;
-        top: 88%;
-        right: -23%;
-
-    }
-}
-
-.texttwo {
-    grid-area: texttwo;
-
-    span {
-        display: inline-block;
-        margin-top: -10px;
-    }
-
-    .accent {
-        position: relative;
-        color: var(--body-color);
-        z-index: 1;
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2%;
-            animation: blinkRedBlue 0.5s infinite;
-            animation-play-state: paused;
-            z-index: -1;
-            transition: all 110ms ease-in;
-        }
-
-        &:hover {
-            color: #fff;
-
-            &:before {
-                height: 100%;
-                animation-play-state: running;
+        .image {
+            margin: 0 auto;
+            position: relative;
+            width: 50%;
+            
+            img {
+                
             }
         }
-    }
-}
 
-.textthree {
-    grid-area: textthree;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
 
-    span {
-        display: inline-block;
-        margin-bottom: -6px;
+            transform: translate(30%, 150px);
+            width: 100%;
+            padding: 2em;
+            background-color: rgba(#000, .7);
+            color: #fff;
+            z-index: 10;
+
+            h1 {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-weight: 100;
+                margin: 0;
+
+                &:last-child {
+                    margin-top: 44px;
+                    text-align: right;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    line-height: 18px;
+                    letter-spacing: 2px;
+
+                    span {
+                        font-weight: 500;
+                        border-left: 1px solid #fff;
+                        padding-left: 6px;
+                    }
+                }
+            }
+        }
     }
 }
 
