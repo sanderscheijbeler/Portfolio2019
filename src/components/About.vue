@@ -18,7 +18,7 @@ export default {
     &__wrapper {
         position: relative;
         margin: 100px 0;
-        
+
         &:after {
             content: 'about';
             position: absolute;
@@ -35,7 +35,9 @@ export default {
             max-height: 600px;
             width: 25vw;
             max-width: 600px;
-            background-color: gray;
+            background-size: cover;
+            background-position: center;
+            background-image: url("/images/uploads/city.jpg");
         }
     }
 }
