@@ -1,40 +1,37 @@
 <template>
-<div class="hero__wrapper">
-    <div class="image">
-        <img src="images\uploads\sander.jpg" alt="sander as a police officer">
-        
-        <div class="content">
-            <h1>How a cop became a coder</h1>
-            <p>My name is Sander, and i create websites.. also i used to be a policeofficer. Weird right?!</p>
-            <p><a href="#readmore"><span>Read</span> more</a></p>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="hero">
+                    <div class="image"></div>
+                    <div class="content">
+                        <h1>How a cop became a coder</h1>
+                        <p>My name is Sander, and i create websites.. also i used to be a policeofficer. Weird
+                            right?!</p>
+                        <p><a href="#readmore"><span>Read</span> more</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>
-export default {
-
-}
+    export default {}
 </script>
 
 <style lang="scss" scoped>
 
-.hero {
-    &__wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .hero {
+        position: relative;
 
         .image {
-            margin: 0 auto;
-            position: relative;
-            width: 50%;
-            
-            img {
-                
-            }
+            width: 100%;
+            padding-top: 115%;
+            background-image: url("/images/uploads/sander.jpg");
+            background-size: 132%;
+            background-position: 100% 32%;
         }
 
         .content {
@@ -42,7 +39,7 @@ export default {
             top: 0;
             left: 0;
 
-            transform: translate(30%, 150px);
+            transform: translate(50%, 121px);
             width: 100%;
             padding: 2em;
             background-color: rgba(#000, .7);
@@ -53,6 +50,7 @@ export default {
                 color: #fff;
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                font-weight: 600;
             }
 
             p {
@@ -79,6 +77,5 @@ export default {
             }
         }
     }
-}
 
 </style>

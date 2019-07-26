@@ -47,17 +47,10 @@ export default {
 
 <style lang="scss">
 
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top:0;
@@ -76,29 +69,6 @@ export default {
     &:hover {
       cursor: pointer;
     }
-  }
-}
-
-.main {
-  margin: 50px auto 0 auto;
-  padding: 1.5vw 15px 0;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: calc(var(--space) / 2);
-  text-align: center;
-  font-size: .8em;
-  margin-top: auto;
-
-  > span {
-    margin: 0 .35em;
-  }
-
-  a {
-    color: currentColor;
   }
 }
 </style>
