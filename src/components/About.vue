@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5 mb-5">
+    <div class="container mb-50">
         <div class="row">
             <div class="col-sm-12">
                 <div class="about__wrapper" id="readmore">

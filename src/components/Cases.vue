@@ -1,0 +1,148 @@
+<template>
+    <div class="container mb-50">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="cases__wrapper">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="case__text">
+                                <p class="case__border--left">
+                                    These are some of the projects i have worked on by myself. Every case has its own story.. Read some!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="case__item">
+                                <div class="item__img">
+
+                                </div>
+                                <div class="item__title">
+                                    Dit is de titel van een case.
+                                </div>
+                                <div class="item__tags">
+                                    <p>
+                                        <span>
+                                            html
+                                        </span>
+                                        <span>
+                                            css
+                                        </span>
+                                        <span>
+                                            js
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="case__item">
+                                <div class="item__img">
+
+                                </div>
+                                <div class="item__title">
+                                    Dit is de titel van een case.
+                                </div>
+                                <div class="item__tags">
+                                    <p>
+                                        <span>
+                                            html
+                                        </span>
+                                        <span>
+                                            css
+                                        </span>
+                                        <span>
+                                            js
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {}
+</script>
+
+
+
+
+<style lang="scss" scoped>
+
+    .cases{
+        &__wrapper {
+            position: relative;
+
+            &:after {
+                content: 'cases';
+                position: absolute;
+                left: 20px;
+                top: 0;
+                text-transform: uppercase;
+                font-size: 170px;
+                line-height: 0;
+                font-weight: 800;
+                opacity: .05;
+                z-index: -10;
+            }
+        }
+    }
+
+    .case {
+        &__text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__border {
+            &--left {
+                border-left: 2px solid rgba(#000,1);
+                padding-left: 23px;
+                opacity: .75;
+            }
+        }
+
+        &__item {
+
+        }
+    }
+
+    .item {
+        &__img {
+            background-image: url("/images/uploads/city.jpg");
+            background-position: center center;
+            background-size: cover;
+            padding-top: 100%;
+            margin-bottom: 12px;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-weight: 700;
+            opacity: .8;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 12px;
+        }
+        &__tags {
+            span {
+                border: 1px solid rgba(#000,.5);
+                padding: 2px 6px;
+                color: rgba(#000,.5);
+                margin: 5px 10px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+</style>

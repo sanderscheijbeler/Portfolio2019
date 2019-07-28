@@ -1,8 +1,8 @@
 <template>
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-50">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-12">
                 <div class="hero">
                     <div class="image"></div>
                     <div class="content">
@@ -25,22 +25,23 @@
 
     .hero {
         position: relative;
+        width: 100%;
 
         .image {
-            width: 100%;
-            padding-top: 115%;
+            width: 70%;
+            padding-top: 80%;
             background-image: url("/images/uploads/sander.jpg");
             background-size: 132%;
             background-position: 100% 32%;
+            margin: 0 auto;
         }
 
         .content {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 200px;
+            right: 0;
 
-            transform: translate(50%, 121px);
-            width: 100%;
+            width: 50%;
             padding: 2em;
             background-color: rgba(#000, .7);
             color: #fff;
