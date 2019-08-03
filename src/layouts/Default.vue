@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <header class="header">
+    <header class="header" :class="{'header__bg--white': navScroll}">
       <div class="header__left">
         <Logo/>
       </div>
@@ -34,14 +34,31 @@ import Navigation from '~/components/Navigation.vue'
 export default {
   data() {
     return {
-      navState: false
+      navState: false,
+      navScroll: false
     }
   },
   components: {
     Logo,
     // ToggleTheme,
     Navigation
-  }
+  },
+  methods: {
+    handleScroll() {
+      this.navScroll = 0 < window.scrollY
+    }
+  },
+  created() {
+    if (process.browser) {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+  },
+
+  destroyed() {
+    if (process.browser) {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  },
 }
 </script>
 
@@ -50,7 +67,7 @@ export default {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
   top:0;
@@ -58,6 +75,7 @@ export default {
   z-index: 2000;
   position: fixed;
   width: 100%;
+  transition: background-color 220ms ease;
 
   &__left,
   &__right {
@@ -67,9 +85,16 @@ export default {
 
   &__navbutton {
     font-weight: 800;
+    line-height: 33px;
 
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  &__bg {
+    &--white {
+      background-color: #ffffff;
     }
   }
 }

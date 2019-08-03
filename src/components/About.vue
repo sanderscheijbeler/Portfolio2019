@@ -14,7 +14,9 @@
                             Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. The most fun part of beeing a cop was ...
                         </p>
                         <p class="about__more">
-                            <a href="#"><span>Read</span> more</a>
+                            <g-link to="/about">
+                                <span>Read</span> more
+                            </g-link>
                         </p>
                     </div>
                 </div>
@@ -65,12 +67,13 @@
             background-size: cover;
             background-position: center;
             background-image: url("/images/uploads/city.jpg");
-            box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
+            box-shadow: none;
 
             @include media-breakpoint-up(md) {
                 flex: 1 0 400px;
                 height: 400px;
                 max-height: 400px;
+                box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
             }
         }
 

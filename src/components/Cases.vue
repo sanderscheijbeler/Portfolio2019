@@ -128,8 +128,12 @@
             background-image: url("/images/uploads/city.jpg");
             background-position: center center;
             background-size: cover;
-            padding-top: 100%;
+            padding-top: 70%;
             margin-bottom: 12px;
+
+            @include media-breakpoint-up(md) {
+                padding-top: 100%;
+            }
         }
 
         &__title {
