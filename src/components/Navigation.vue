@@ -41,13 +41,13 @@ export default {
 
 <style lang="scss">
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;

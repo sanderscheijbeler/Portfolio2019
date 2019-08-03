@@ -28,39 +28,68 @@
         width: 100%;
 
         .image {
-            width: 70%;
-            padding-top: 80%;
+            width: 100%;
+            padding-top: 120%;
             background-image: url("/images/uploads/sander.jpg");
             background-size: 132%;
             background-position: 100% 32%;
             margin: 0 auto;
+
+            @include media-breakpoint-up(md) {
+                width: 70%;
+                padding-top: 80%;
+            }
         }
 
         .content {
-            position: absolute;
-            top: 200px;
+            position: static;
+            top: auto;
+            bottom: 0;
             right: 0;
 
-            width: 50%;
-            padding: 2em;
+            width: 100%;
+            padding: 1.5em;
             background-color: rgba(#000, .7);
             color: #fff;
             z-index: 10;
+            margin-top: -30%;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+                position: absolute;
+                top: 200px;
+                width: 50%;
+                bottom: auto;
+                padding: 2em;
+            }
 
             h1 {
                 color: #fff;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-weight: 600;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.4rem;
+                }
             }
 
             p {
                 font-weight: 100;
                 margin: 0;
 
+                @include media-breakpoint-down(md) {
+                    /*font-size: ;*/
+                }
+
                 &:last-child {
-                    margin-top: 44px;
+                    margin-top: 22px;
                     text-align: right;
+
+                    @include media-breakpoint-up(md) {
+                        margin-top: 44px;
+                    }
+
                 }
 
                 a {

@@ -64,11 +64,17 @@ export default {
     display: flex;
     align-items: center;
   }
+
   &__navbutton {
     font-weight: 800;
+
     &:hover {
       cursor: pointer;
     }
   }
 }
+
+  .footer {
+    text-align: center;
+  }
 </style>

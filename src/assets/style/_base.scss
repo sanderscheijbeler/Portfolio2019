@@ -29,5 +29,9 @@ img {
 }
 
 .mb-50 {
-	margin-bottom: 12rem;
+	margin-bottom: 5rem;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 12rem;
+    }
 }

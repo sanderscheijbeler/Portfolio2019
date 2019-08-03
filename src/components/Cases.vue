@@ -6,8 +6,9 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="case__text">
-                                <p class="case__border--left">
-                                    These are some of the projects i have worked on by myself. Every case has its own story.. Read some!
+                                <p class="case__border">
+                                    These are some of the projects i have worked on by myself. Every case has its own
+                                    story.. Read some!
                                 </p>
                             </div>
                         </div>
@@ -68,12 +69,9 @@
     export default {}
 </script>
 
-
-
-
 <style lang="scss" scoped>
 
-    .cases{
+    .cases {
         &__wrapper {
             position: relative;
 
@@ -88,6 +86,11 @@
                 font-weight: 800;
                 opacity: .05;
                 z-index: -10;
+                display: none;
+
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
             }
         }
     }
@@ -99,11 +102,19 @@
             flex-direction: column;
             justify-content: center;
         }
+
         &__border {
-            &--left {
-                border-left: 2px solid rgba(#000,1);
-                padding-left: 23px;
-                opacity: .75;
+            border-left: none;
+            padding: 12px;
+            opacity: .75;
+            border-top: 2px solid rgba(#000, .8);
+            border-bottom: 2px solid rgba(#000, .8);
+
+            @include media-breakpoint-up(md) {
+                border-top: none;
+                border-bottom: none;
+                border-left: 2px solid rgba(#000, 1);
+                padding: 0 0 0 23px;
             }
         }
 
@@ -129,16 +140,18 @@
             line-height: 1.4rem;
             margin-bottom: 12px;
         }
+
         &__tags {
             span {
-                border: 1px solid rgba(#000,.5);
+                border: 1px solid rgba(#000, .5);
                 padding: 2px 6px;
-                color: rgba(#000,.5);
+                color: rgba(#000, .5);
                 margin: 5px 10px;
 
                 &:first-child {
                     margin-left: 0;
                 }
+
                 &:last-child {
                     margin-right: 0;
                 }

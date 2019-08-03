@@ -33,6 +33,11 @@
         &__wrapper {
             position: relative;
             display: flex;
+            flex-direction: column;
+
+            @include media-breakpoint-up(md) {
+                flex-direction: row;
+            }
 
             &:after {
                 content: 'about';
@@ -45,21 +50,38 @@
                 font-weight: 800;
                 opacity: .05;
                 z-index: -10;
+                display: none;
+
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
             }
         }
 
         &__image {
-            flex: 1 0 400px;
-            height: 400px;
-            max-height: 400px;
+            flex: 1 0 300px;
+            height: 300px;
+            max-height: 300px;
             background-size: cover;
             background-position: center;
             background-image: url("/images/uploads/city.jpg");
             box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
+
+            @include media-breakpoint-up(md) {
+                flex: 1 0 400px;
+                height: 400px;
+                max-height: 400px;
+            }
         }
 
         &__content {
-            transform: translate(-9%, 17%);
+            margin-top: 32px;
+            transform: translate(0%, 0%);
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+                transform: translate(-9%, 17%);
+            }
 
             h2 {
                 text-transform: uppercase;
@@ -67,6 +89,10 @@
                 letter-spacing: 1px;
                 opacity: .75;
                 position: relative;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.5rem;
+                }
 
                 &:before {
                     content: '';
@@ -83,11 +109,20 @@
                 width: 50%;
                 margin-left: auto;
                 margin-right: 25%;
+
+                @include media-breakpoint-down(md) {
+                    margin-right: 0;
+                    width: 72%;
+                }
             }
         }
         &__more {
-            margin-top: 40px;
+            margin-top: 0;
             text-align: right;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 40px;
+            }
             a {
                 color: rgba(#000,.75);
                 text-decoration: none;
