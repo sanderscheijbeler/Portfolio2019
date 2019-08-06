@@ -4,27 +4,33 @@
     <section class="section-about">
       <div class="container">
         <div class="row">
-          <div class="col-md-10">
-            <h1 class="mt-5 mb-3">
+          <div class="col-sm-10">
+            <h1 class="mb-3">
               "Now this is a story all about how my life got twisted upside down..."
             </h1>
-
-            <p class="text__col text__col--two">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam beatae consequatur delectus deleniti distinctio dolore doloremque doloribus dolorum, eaque fugiat illo iste magnam nihil non nostrum officiis omnis perspiciatis placeat quibusdam reprehenderit sed suscipit tempore tenetur ullam veritatis vitae voluptate. Accusantium atque consequatur, eius impedit mollitia porro quaerat. A accusamus adipisci aliquam, beatae blanditiis cum cumque cupiditate deleniti dicta dolore doloribus eaque esse et eveniet incidunt ipsa iure laboriosam laborum libero minima nemo neque nihil numquam odit qui quibusdam rem repudiandae sapiente sequi similique sit velit vero voluptatem! Aliquam cumque, dolorum laborum perferendis quaerat quam rem soluta! Aliquam, doloremque!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text__col">
+              Lang verhaal kort. Ik ben Sander en ik ben 32 jaar, werk momenteel sinds April 2018 als Front End Developer. Daarvoor was ik politieagent in hartje Rotterdam. Hierdoor heb ik onder unieke omstandigheden geleerd wat teamwerk, doorzetten, verantwoordlijkheid is.
             </p>
 
             <img class="mb-3" src="/images/uploads/city.jpg" alt="Me!">
 
-            <h2 class="mt-5 mb-3">
+            <h2 class="mb-3">
               Maar waarom?
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi, debitis doloremque facere iusto nisi officia placeat ratione reiciendis rem repellat sint suscipit, temporibus. Adipisci consequatur consequuntur corporis deleniti dicta ducimus eligendi fugit incidunt minus nesciunt officiis optio perferendis provident saepe similique tenetur voluptas, voluptates voluptatibus. Aspernatur, dolorum, quidem? Aut corporis deserunt esse hic illum laborum, magni minus nam quis repudiandae sapiente ullam veniam vitae. Ad aperiam autem consectetur consequuntur cum dicta dolores ducimus excepturi illum impedit incidunt iusto laboriosam maxime modi neque nesciunt nihil nulla, pariatur provident repellat rerum sint suscipit vitae voluptas voluptate. Atque ea earum maiores totam!
+              Tijdens mijn carriere als agent ben ik altijd actief gebleven door kleine edits te doen aan bestaande wordpress sites. Na alle spanning en sensatie besloten mijn vrouw en ik meer rust te gaan zoeken. Hierdoor ben ik mijn kennis en ervaring binnen de web development gaan professionaliseren. Na enige tijd vond ik mijn 'landde' in mijn eerste baan als Front End Developer.
             </p>
 
-            <h2 class="mt-5 mb-3">
+            <h2 class="mb-3">
               Dus.. wat doe je?!
             </h2>
+            <p>
+              Tijdens mijn huidige functie heb ik verschillende projecten gedraaid. Het uitwerken van styleguides, realiseren van bedrijfs-landingspagina's, ontwikkelen van custom wordpress thema's. Maar ook opzoek naar custom oplossingen zoals een klantenportaal binnen een Dynamics 365 omgeving.
+            </p>
             <p>
               Ik werk in HTML, (S)CSS, PHP, JavaScript (ES6). <br>
               Gewoon nog wat termen waar ik mee werk of heb gewerkt: Docker, Bootstrap4, VueJS/NuxtJS, jQuery, Git, twig, Wordpress.
@@ -42,15 +48,24 @@
 export default {
   metaInfo: {
     title: 'About'
+  },
+  data() {
+    return {
+      myAge : new Date(1987, 2, 14)
+    }
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style>
   .section-about {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 100px 0 0 0;
   }
 </style>

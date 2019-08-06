@@ -85,6 +85,18 @@
                     font-size: 2rem;
                     font-weight: 700;
                     padding: 12px 12px;
+
+                    @include media-breakpoint-up(md) {
+                        font-size: 3rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 4rem;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }

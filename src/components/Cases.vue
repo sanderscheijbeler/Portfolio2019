@@ -142,15 +142,36 @@
             opacity: .8;
             font-size: 1.2rem;
             line-height: 1.4rem;
-            margin-bottom: 12px;
         }
 
         &__tags {
+            text-align: right;
             span {
-                border: 1px solid rgba(#000, .5);
-                padding: 2px 6px;
+                padding: 2px 0px;
                 color: rgba(#000, .5);
                 margin: 5px 10px;
+                position: relative;
+                font-style: italic;
+                font-size: .9em;
+                text-transform: uppercase;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 90%;
+                    height: 1px;
+                    background-color: #000;
+                    transform: scaleX(0);
+                    transition: all 220ms ease-in-out;
+                }
+
+                &:hover {
+                    &:before {
+                        transform: scaleX(1);
+                    }
+                }
 
                 &:first-child {
                     margin-left: 0;

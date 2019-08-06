@@ -113,5 +113,9 @@ export default {
 
   .footer {
     text-align: center;
+
+    a {
+      color: #000;
+    }
   }
 </style>
