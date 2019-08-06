@@ -43,17 +43,17 @@ img {
 
         &--two {
          column-count: 2;
+
+            @include media-breakpoint-down(md) {
+                column-count: 1;
+            }
         }
     }
 }
 
 .ham {
     cursor: pointer;
-    /*   -webkit-tap-highlight-color: transparent; */
     transition: transform 400ms;
-    /*   -moz-user-select: none; */
-    /*   -webkit-user-select: none; */
-    /*   -ms-user-select: none; */
     user-select: none;
 }
 .hamRotate.active {
@@ -65,8 +65,8 @@ img {
 .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width:5.5;
+    stroke:rgba(#000, .7);
+    stroke-width:4.5;
     stroke-linecap:round;
 }
 .ham3 .top {

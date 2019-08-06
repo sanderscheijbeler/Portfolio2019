@@ -15,14 +15,14 @@
 
             <img class="mb-3" src="/images/uploads/city.jpg" alt="Me!">
 
-            <h2>
+            <h2 class="mt-5 mb-3">
               Maar waarom?
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi, debitis doloremque facere iusto nisi officia placeat ratione reiciendis rem repellat sint suscipit, temporibus. Adipisci consequatur consequuntur corporis deleniti dicta ducimus eligendi fugit incidunt minus nesciunt officiis optio perferendis provident saepe similique tenetur voluptas, voluptates voluptatibus. Aspernatur, dolorum, quidem? Aut corporis deserunt esse hic illum laborum, magni minus nam quis repudiandae sapiente ullam veniam vitae. Ad aperiam autem consectetur consequuntur cum dicta dolores ducimus excepturi illum impedit incidunt iusto laboriosam maxime modi neque nesciunt nihil nulla, pariatur provident repellat rerum sint suscipit vitae voluptas voluptate. Atque ea earum maiores totam!
             </p>
 
-            <h2>
+            <h2 class="mt-5 mb-3">
               Dus.. wat doe je?!
             </h2>
             <p>

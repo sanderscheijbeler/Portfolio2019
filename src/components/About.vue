@@ -11,7 +11,7 @@
                             Imagine all the stories...
                         </h2>
                         <p>
-                            Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. The most fun part of beeing a cop was ...
+                            Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. Yes, I now build websites..
                         </p>
                         <p class="about__more">
                             <g-link to="/about">
@@ -45,7 +45,7 @@
                 content: 'about';
                 position: absolute;
                 right: 20px;
-                top: 3rem;
+                top: 0;
                 text-transform: uppercase;
                 font-size: 170px;
                 line-height: 0;
