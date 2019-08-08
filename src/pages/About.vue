@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-md-8">
             <p class="text__col">
-              Lang verhaal kort. Ik ben Sander en ik ben 32 jaar, werk momenteel sinds April 2018 als Front End Developer. Daarvoor was ik politieagent in hartje Rotterdam. Hierdoor heb ik onder unieke omstandigheden geleerd wat teamwerk, doorzetten, verantwoordlijkheid is.
+              Lang verhaal kort. Ik ben Sander en ik ben {{ myAge }}, werk momenteel sinds April 2018 als Front End Developer. Daarvoor was ik politieagent in hartje Rotterdam. Hierdoor heb ik onder unieke omstandigheden geleerd wat teamwerk, doorzetten, verantwoordlijkheid is.
             </p>
 
             <img class="mb-3" src="/images/uploads/city.jpg" alt="Me!">
@@ -22,7 +22,7 @@
               Maar waarom?
             </h2>
             <p>
-              Tijdens mijn carriere als agent ben ik altijd actief gebleven door kleine edits te doen aan bestaande wordpress sites. Na alle spanning en sensatie besloten mijn vrouw en ik meer rust te gaan zoeken. Hierdoor ben ik mijn kennis en ervaring binnen de web development gaan professionaliseren. Na enige tijd vond ik mijn 'landde' in mijn eerste baan als Front End Developer.
+              Tijdens mijn carriere als agent ben ik altijd actief gebleven door kleine edits te doen aan bestaande wordpress sites. Na alle spanning en sensatie besloten mijn vrouw en ik meer rust te gaan zoeken. Hierdoor ben ik mijn kennis en ervaring binnen de web development gaan professionaliseren. Na enige tijd 'landde' in mijn eerste baan als Front End Developer.
             </p>
 
             <h2 class="mb-3">
@@ -51,11 +51,22 @@ export default {
   },
   data() {
     return {
-      myAge : new Date(1987, 2, 14)
+      birthDate : new Date(1987, 1, 14),
+      dateNow : new Date()
     }
   },
-  methods: {
+  mounted() {
+      setInterval(() => {
+        this.dateNow = new Date()
+      },1000)
+  },
+  computed: {
+    myAge () {
+      let years = this.dateNow.getFullYear() - this.birthDate.getFullYear()
+      // let monts = this.dateNow.getMonth() - this.birthDate.getMonth()
 
+      return `${years} jaar`
+    }
   }
 }
 </script>
