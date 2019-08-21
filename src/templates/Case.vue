@@ -36,8 +36,8 @@
 </script>
 
 <page-query>
-query Post ($path: String!) {
-  post: case (path: $path) {
+query Case ($path: String!) {
+  case: case (path: $path) {
     title
     path
     date (format: "D. MMMM YYYY")

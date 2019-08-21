@@ -27,7 +27,7 @@ module.exports = {
       options: {
         typeName: 'Case',
         path: 'content/cases/*.md',
-        route: '/:slug',
+        route: 'case/:slug',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {

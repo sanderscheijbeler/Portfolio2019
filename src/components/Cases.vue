@@ -12,52 +12,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="case__item">
-                                <div class="item__img">
+                        <caseItem v-for="edge in $static.cases.edges" :key="edge.node.id" :caseitem="edge.node" />
 
-                                </div>
-                                <div class="item__title">
-                                    Dit is de titel van een case.
-                                </div>
-                                <div class="item__tags">
-                                    <p>
-                                        <span>
-                                            html
-                                        </span>
-                                        <span>
-                                            css
-                                        </span>
-                                        <span>
-                                            js
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="case__item">
-                                <div class="item__img">
-
-                                </div>
-                                <div class="item__title">
-                                    Dit is de titel van een case.
-                                </div>
-                                <div class="item__tags">
-                                    <p>
-                                        <span>
-                                            html
-                                        </span>
-                                        <span>
-                                            css
-                                        </span>
-                                        <span>
-                                            js
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <h1>test</h1>
                     <ul>
@@ -69,6 +25,10 @@
                                     {{ tag.title}}
                                 </li>
                             </ul>
+                            LINK:
+                            <g-link :to="edge.node.path">
+                                {{ edge.node.title }}
+                            </g-link>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +65,13 @@
 </static-query>
 
 <script>
-    export default {}
+    import caseItem from '~/components/caseItem.vue'
+
+    export default {
+        components: {
+            caseItem
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
