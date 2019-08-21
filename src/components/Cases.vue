@@ -59,11 +59,50 @@
                             </div>
                         </div>
                     </div>
+                    <h1>test</h1>
+                    <ul>
+                        <li v-for="edge in $static.cases.edges" :key="edge.node.id">
+                            {{ edge.node.title }} <br>
+                            {{ edge.node.coverImage }} <br>
+                            <ul>
+                                <li v-for="tag in edge.node.tags">
+                                    {{ tag.title}}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<static-query>
+    query Cases {
+        cases: allCase(limit: 2) {
+            edges {
+                node {
+                    id
+                    title
+                    path
+                    tags {
+                        id
+                        title
+                        path
+                    }
+                    date (format: "D. MMMM YYYY")
+                    description
+                    coverImage
+                    ... on Case {
+                            id
+                            title
+                            path
+                    }
+                }
+            }
+        }
+    }
+</static-query>
 
 <script>
     export default {}
@@ -146,6 +185,7 @@
 
         &__tags {
             text-align: right;
+
             span {
                 padding: 2px 0px;
                 color: rgba(#000, .5);
