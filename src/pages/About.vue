@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <section class="section-about">
       <div class="container">
         <div class="row">
@@ -66,7 +65,7 @@ export default {
       let years = this.dateNow.getFullYear() - this.birthDate.getFullYear()
       // let monts = this.dateNow.getMonth() - this.birthDate.getMonth()
 
-      return `${years} jaar`
+      return `${years}`
     }
   }
 }
