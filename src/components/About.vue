@@ -11,7 +11,7 @@
                             Imagine all the stories...
                         </h2>
                         <p>
-                            Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. Yes, I now build websites..
+                            Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. Yes, I now build websites.
                         </p>
                         <p class="about__more">
                             <g-link to="/about">
@@ -68,12 +68,18 @@
             background-position: center;
             background-image: url("/images/uploads/city.jpg");
             box-shadow: none;
+            transition: all 240ms ease-in-out;
 
             @include media-breakpoint-up(md) {
                 flex: 1 0 400px;
                 height: 400px;
                 max-height: 400px;
-                box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
+                //box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 13px 12px -4px rgba(0,0,0,0.75);
             }
         }
 

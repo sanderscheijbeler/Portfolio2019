@@ -16,19 +16,6 @@
                     CV
                 </g-link>
             </li>
-            <!--            <li>-->
-            <!--                <g-link to="/blog">-->
-            <!--                    Blog-->
-            <!--                </g-link>-->
-            <!--            </li>-->
-            <!--        <li>-->
-            <!--          <g-link to="/contact">-->
-            <!--            Contact-->
-            <!--          </g-link>-->
-            <!--        </li>-->
-            <!--        <li>-->
-            <!--            <ToggleTheme />-->
-            <!--        </li>-->
         </ul>
     </nav>
 </template>
@@ -57,16 +44,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: -1;
+        z-index: -100;
 
-        // transform: translateY(-100%);
+        transform: translateY(-100%);
         opacity: 0;
-        transition: 300ms all ease-in-out;
+        transition: 300ms opacity ease-in-out;
 
         &--open {
             opacity: 1;
-            z-index: 1000;
-            // transform: translateY(0%);
+            z-index: 100;
+            transform: translateY(0%);
         }
 
         ul {

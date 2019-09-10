@@ -2,14 +2,21 @@
 
     <div class="container mt-5 mb-50">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 mt-md-5">
                 <div class="hero">
                     <div class="image"></div>
                     <div class="content">
-                        <h1>How a cop became a coder</h1>
-                        <p>My name is Sander, and i create websites.. also i used to be a policeofficer. Weird
-                            right?!</p>
-                        <p><a href="#readmore"><span>Read</span> more</a></p>
+                        <h1>
+                            How a cop became a coder
+                        </h1>
+                        <p>
+                            My name is Sander, and I create websites. I also used to be a police officer. Weird right?!
+                        </p>
+                        <p>
+                            <a href="#readmore">
+                                <span>Read</span> more
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

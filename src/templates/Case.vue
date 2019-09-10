@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
   export default {
   components: {},
   metaInfo () {
@@ -58,6 +57,7 @@ query Case ($path: String!) {
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
+  margin-top: 32px;
 }
 
 .post {

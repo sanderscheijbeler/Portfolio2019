@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import BootstrapVue from 'bootstrap-vue'
-
+import VueCarousel from 'vue-carousel';
 
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'
@@ -13,6 +13,9 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
 
   // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
-  Vue.use(BootstrapVue)
+  Vue.component('Layout', DefaultLayout);
+  Vue.use(BootstrapVue);
+  Vue.use(VueCarousel);
 }
+
+

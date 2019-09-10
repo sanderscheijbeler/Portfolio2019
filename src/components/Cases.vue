@@ -7,30 +7,17 @@
                         <div class="col-sm-4">
                             <div class="case__text">
                                 <p class="case__border">
-                                    These are some of the projects i have worked on by myself. Every case has its own
-                                    story.. Read some!
+                                    These are some of the projects I have worked on by myself. Every case has its own story.. <small>Project that I did at my current job are not listed here.</small>
+                                </p>
+                                <p>
+                                    <g-link to="/cases" class="case__link">
+                                        <span>Read</span> more
+                                    </g-link>
                                 </p>
                             </div>
                         </div>
                         <caseItem v-for="edge in $static.cases.edges" :key="edge.node.id" :caseitem="edge.node" />
-
                     </div>
-                    <h1>test</h1>
-                    <ul>
-                        <li v-for="edge in $static.cases.edges" :key="edge.node.id">
-                            {{ edge.node.title }} <br>
-                            {{ edge.node.coverImage }} <br>
-                            <ul>
-                                <li v-for="tag in edge.node.tags">
-                                    {{ tag.title}}
-                                </li>
-                            </ul>
-                            LINK:
-                            <g-link :to="edge.node.path">
-                                {{ edge.node.title }}
-                            </g-link>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -123,8 +110,19 @@
             }
         }
 
-        &__item {
+        &__link {
+            display: block;
+            text-align: right;
+            color: rgba(#000,.75);
+            text-decoration: none;
+            line-height: 18px;
+            letter-spacing: 2px;
 
+            span {
+                font-weight: 500;
+                border-left: 1px solid rgba(#000,.75);
+                padding-left: 6px;
+            }
         }
     }
 

@@ -13,27 +13,28 @@
         <div class="row">
           <div class="col-md-8">
             <p class="text__col">
-              Lang verhaal kort. Ik ben Sander en ik ben {{ myAge }}, werk momenteel sinds April 2018 als Front End Developer. Daarvoor was ik politieagent in hartje Rotterdam. Hierdoor heb ik onder unieke omstandigheden geleerd wat teamwerk, doorzetten, verantwoordlijkheid is.
+              My name is Sander and I'm {{ myAge }} years old. Since April 2018 I'm working as a Front End Developer.
+              Before that I was a police officer in the centre of Rotterdam. As a result I have learned under unique circumstances what teamwork, dedication and responsibility is.
             </p>
 
             <img class="mb-3" src="/images/uploads/city.jpg" alt="Me!">
 
             <h2 class="mb-3">
-              Maar waarom?
+              But why?
             </h2>
             <p>
-              Tijdens mijn carriere als agent ben ik altijd actief gebleven door kleine edits te doen aan bestaande wordpress sites. Na alle spanning en sensatie besloten mijn vrouw en ik meer rust te gaan zoeken. Hierdoor ben ik mijn kennis en ervaring binnen de web development gaan professionaliseren. Na enige tijd 'landde' in mijn eerste baan als Front End Developer.
+              During my career as an police officer I've always remained active by doing small edits at existing Wordpress sites. After all the excitement and sensation, my wife and I decided to look for more peace and rest. Because of this I started to professionalize my knowledge and experience within web development. After a while I 'landed' my first job as a Front End Developer.
             </p>
 
             <h2 class="mb-3">
-              Dus.. wat doe je?!
+              So... what are you doing now?
             </h2>
             <p>
-              Tijdens mijn huidige functie heb ik verschillende projecten gedraaid. Het uitwerken van styleguides, realiseren van bedrijfs-landingspagina's, ontwikkelen van custom wordpress thema's. Maar ook opzoek naar custom oplossingen zoals een klantenportaal binnen een Dynamics 365 omgeving.
+              During my current job I've run various projects. I turn sketch or XD designs into styleguides, creating company landing pages, developing custom Wordpress themes, email-templates. But I also created custom solutions such as a customer portal within Dynamics 365.
             </p>
             <p>
-              Ik werk in HTML, (S)CSS, PHP, JavaScript (ES6). <br>
-              Gewoon nog wat termen waar ik mee werk of heb gewerkt: Docker, Bootstrap4, VueJS/NuxtJS, jQuery, Git, twig, Wordpress.
+              I work with HTML5, (S) CSS3, PHP and JavaScript (ES6). <br>
+              A few more languages that I work or have worked with are: Docker, Bootstrap4 (and 3), VueJS / NuxtJS, Gridsome, jQuery, Git, Gulp, twig and Wordpress.
             </p>
           </div>
         </div>

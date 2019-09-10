@@ -14,7 +14,10 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.27",
     "gridsome": "^0.6.5",
-    "vue": "^2.6.10"
+    "slick-slider": "^1.8.2",
+    "vue": "^2.6.10",
+    "vue-carousel": "^0.18.0",
+    "vue-owl-carousel": "^2.0.3"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
