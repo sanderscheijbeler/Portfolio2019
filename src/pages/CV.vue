@@ -24,24 +24,6 @@
 export default {
   metaInfo: {
     title: 'CV'
-  },
-  data() {
-    return {
-      birthDate : new Date(1987, 1, 14),
-      dateNow : new Date()
-    }
-  },
-  mounted() {
-      setInterval(() => {
-        this.dateNow = new Date()
-      },1000)
-  },
-  computed: {
-    myAge () {
-      let years = this.dateNow.getFullYear() - this.birthDate.getFullYear()
-
-      return `${years} jaar`
-    }
   }
 }
 </script>

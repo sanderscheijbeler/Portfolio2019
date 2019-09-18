@@ -3,11 +3,13 @@
         <div class="cases__wrapper">
             <div class="container">
                 <div class="row justify-content-center">
-                    <carousel :perPage="1" :autoplay="false">
-                        <slide v-for="edge in $page.cases.edges" :key="edge.node.id">
-                            <caseItem :caseitem="edge.node" />
-                        </slide>
-                    </carousel>
+                    <ClientOnly>
+                        <carousel :perPage="1" :autoplay="false">
+                            <slide v-for="edge in $page.cases.edges" :key="edge.node.id">
+                                <caseItem :caseitem="edge.node" />
+                            </slide>
+                        </carousel>
+                    </ClientOnly>
                 </div>
             </div>
         </div>
@@ -43,13 +45,18 @@
 
 
 <script>
-    import { Carousel, Slide } from 'vue-carousel';
     import caseItem from '~/components/caseItem.vue'
 
     export default {
         components: {
-            Carousel,
-            Slide,
+            Carousel: () =>
+                import ('vue-carousel/src/index')
+                    .then(m => m.Carousel)
+                    .catch(),
+            Slide: () =>
+                import ('vue-carousel/src/index')
+                    .then(m => m.Slide)
+                    .catch(),
             caseItem
         },
         metaInfo: {

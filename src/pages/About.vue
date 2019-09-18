@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-md-8">
             <p class="text__col">
-              My name is Sander and I'm {{ myAge }} years old. Since April 2018 I'm working as a Front End Developer.
+              My name is Sander and I'm 32 years old. Since April 2018 I'm working as a Front End Developer.
               Before that I was a police officer in the centre of Rotterdam. As a result I have learned under unique circumstances what teamwork, dedication and responsibility is.
             </p>
 
@@ -44,29 +44,9 @@
 </template>
 
 <script>
-
 export default {
   metaInfo: {
     title: 'About'
-  },
-  data() {
-    return {
-      birthDate : new Date(1987, 1, 14),
-      dateNow : new Date()
-    }
-  },
-  mounted() {
-      setInterval(() => {
-        this.dateNow = new Date()
-      },1000)
-  },
-  computed: {
-    myAge () {
-      let years = this.dateNow.getFullYear() - this.birthDate.getFullYear()
-      // let monts = this.dateNow.getMonth() - this.birthDate.getMonth()
-
-      return `${years}`
-    }
   }
 }
 </script>

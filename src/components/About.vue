@@ -12,6 +12,7 @@
                         </h2>
                         <p>
                             Yes, I arrested people. No, I did not run red lights just because my dinner was getting cold. Yes, I now build websites.
+                            background-image: url("/images/uploads/city.jpg");
                         </p>
                         <p class="about__more">
                             <g-link to="/about">
@@ -24,10 +25,6 @@
         </div>
     </div>
 </template>
-
-<script>
-    export default {}
-</script>
 
 <style lang="scss" scoped>
 
@@ -66,7 +63,7 @@
             max-height: 300px;
             background-size: cover;
             background-position: center;
-            background-image: url("/images/uploads/city.jpg");
+
             box-shadow: none;
             transition: all 240ms ease-in-out;
 
@@ -74,7 +71,6 @@
                 flex: 1 0 400px;
                 height: 400px;
                 max-height: 400px;
-                //box-shadow: -15px 15px 0px 2px rgba(0,0,0,0.85);
             }
 
             &:hover {
