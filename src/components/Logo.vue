@@ -1,16 +1,16 @@
 <template>
     <g-link class="logo" to="/">
 	  <span class="logo__text">
-	    {{ $static.metaData.siteName }}
+	    {{ $static.metadata.siteName }}
 	  </span>
     </g-link>
 </template>
 
 <static-query>
     query {
-    metaData {
-    siteName
-    }
+      metadata {
+        siteName
+      }
     }
 </static-query>
 
