@@ -1,13 +1,10 @@
 ---
 title: My own project
-date: 2019-02-06
-published: true
 tags: ['HTML5','CSS3','JavaScript', 'Gulp']
-coverImage: /images/uploads/police.jpg
-description: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions."
+coverImage: /images/uploads/project2.png
 ---
 
-This project started while i was applying for jobs. I was seeing great projects, talking to developers and learning about nice features. 
+This project started while i was applying for jobs. I was seeing great projects, talking to developers and learning about nice features.
 
 Comparing with my first site i wanted to be more organised with my CSS. So I started using smaller scss files. And think about the way I wanted to use the navigation bar. Which led me to getting to know css animations alot better. I was really proud of the look and feel of the menu and the hamburger.
 

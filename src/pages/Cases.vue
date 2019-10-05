@@ -29,7 +29,6 @@
                 title
                 path
               }
-            date (format: "D. MMMM YYYY")
             description
             coverImage
             ... on Case {

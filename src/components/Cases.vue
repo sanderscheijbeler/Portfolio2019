@@ -7,7 +7,7 @@
                         <div class="col-sm-4">
                             <div class="case__text">
                                 <p class="case__border">
-                                    These are some of the projects I have worked on by myself. Every case has its own story.. <small>Project that I did at my current job are not listed here.</small>
+                                    These are some of the projects I have worked on by myself. Every case has its own story.. <small>Projects that I did at my current job are not listed here.</small>
                                 </p>
                                 <p>
                                     <g-link to="/cases" class="case__link">
@@ -37,8 +37,6 @@
                         title
                         path
                     }
-                    date (format: "D. MMMM YYYY")
-                    description
                     coverImage
                     ... on Case {
                             id

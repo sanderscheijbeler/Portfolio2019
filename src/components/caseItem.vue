@@ -47,7 +47,7 @@
     .item {
         &__img {
             background-image: url("/images/uploads/city.jpg");
-            background-position: center center;
+            background-position: top center;
             background-size: cover;
             padding-top: 70%;
             margin-bottom: 12px;

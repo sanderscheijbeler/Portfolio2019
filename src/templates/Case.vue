@@ -39,14 +39,11 @@ query Case ($path: String!) {
   case: case (path: $path) {
     title
     path
-    date (format: "D. MMMM YYYY")
-    timeToRead
     tags {
       id
       title
       path
     }
-    description
     content
     coverImage (width: 860, blur: 10)
   }
