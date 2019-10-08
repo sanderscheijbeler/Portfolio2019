@@ -4,4 +4,4 @@ tags: ['Wordpress', 'PHP', 'JavaScript']
 coverImage: /images/uploads/jimvandenbliek.png
 description: "A wordpress theme created for Jim, a actor and producer."
 ---
-A portfolio website build on wordpress. I created this theme working with the underscore base theme. Tools i used to create this theme include the bootstrap grid, slick slider and gulp. To modify the backend of wordpress i used CPTUI and ACF.
+A portfolio website build on Wordpress. I created this theme working with the underscore base theme. Tools I used to create this theme include Bootstrap grid, Slick slider and Gulp. To modify the backend of Wordpress I used CPTUI and ACF.
